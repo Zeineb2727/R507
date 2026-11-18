@@ -1,4 +1,6 @@
 {
+    "name": "ton-user/symfony-contact-app",
+    "description": "Application de contact Symfony avec CI GitHub Actions",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "dev",

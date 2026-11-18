@@ -36,10 +36,10 @@ class MainControllerTest extends WebTestCase
         $this->assertSame('new', $contact->getStatus());
     }
 
-    public function testListPageIsSuccessful(): void
+    public function testListPageWithSearch(): void
     {
         $client = static::createClient();
-        $client->request('GET', '/liste/1');
+        $client->request('GET', '/liste/1', ['search' => 'Doe', 'status' => 'new']);
 
         $this->assertResponseIsSuccessful();
     }
